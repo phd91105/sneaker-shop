@@ -36,7 +36,7 @@ if (isset($_GET['customer_user'])) {
     <meta name="keywords" content="Ogani, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Demo PHP</title>
+    <title>Saigon Sneaker Store  - Authentic - Sneaker</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@200;300;400;600;900&display=swap" rel="stylesheet">
@@ -66,7 +66,8 @@ if (isset($_GET['customer_user'])) {
                         <div class="header__top__left">
                             <ul>
                                 <!-- <li><i class="fa fa-envelope"></i> shop@123.com</li> -->
-                                <li><a class="text-dark" href="index.php"><b>PHP Ecommerce</b> </a></li>
+                                <li><a class="text-dark" href="index.php">
+                                        <img src="./img/logo-snkrsg.png"></img></a></li>
                                 <li class="active"><a class="text-dark" href="./index.php">Trang chủ</a></li>
                                 <li><a class="text-dark" href="./product.php">Sản phẩm</a></li>
                                 <li><a class="text-dark" href="./contact.php">Liên hệ</a></li>

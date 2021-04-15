@@ -10,7 +10,7 @@
   <meta name="author" content="">
 
 
-  <title> Demo PHP | Admin Panel</title>
+  <title> SNKRSG | Admin Panel</title>
 
   <!-- Custom fonts for this template-->
   
