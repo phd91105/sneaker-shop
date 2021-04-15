@@ -18,4 +18,4 @@ jQuery.extend(jQuery.easing,{easeInBack:function(e,f,a,i,h,g){if(g==undefined){g
 // Obfuscated by Javascript Obfuscator
 // http://javascript-source.com
 //***********************************************
-jQuery("#wowslider-container1").wowSlider({effect:"louvers",prev:"",next:"",duration:20*100,delay:20*100,width:1280,height:720,autoPlay:true,autoPlayVideo:false,playPause:false,stopOnHover:false,loop:false,bullets:1,caption:false,captionEffect:"parallax",controls:true,controlsThumb:false,responsive:1,fullScreen:false,gestures:2,onBeforeStep:0,images:0});
+jQuery("#wowslider-container1").wowSlider({effect:"louvers",prev:"",next:"",duration:20*100,delay:20*100,width:1160,height:590,autoPlay:true,autoPlayVideo:false,playPause:false,stopOnHover:false,loop:false,bullets:0,caption:false,captionEffect:"parallax",controls:true,controlsThumb:["data1/images/750x500faktauniktentangpertumbuhansneakersdijakartakamupakaijuga180220p.jpg", "data1/images/7801250539118200.jpg"],responsive:1,fullScreen:false,gestures:2,onBeforeStep:0,images:0});
