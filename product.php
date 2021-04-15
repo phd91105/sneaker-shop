@@ -36,7 +36,7 @@
                                     <span class="arrow_carrot-down"></span>
                                 </div> -->
 
-                                <input type="text" name="namepro" placeholder="What do yo u need?">
+                                <input type="text" name="namepro" placeholder="Tìm kiếm ...?">
                                 <button type="" class="site-btn">SEARCH</button>
 
                             </form>
