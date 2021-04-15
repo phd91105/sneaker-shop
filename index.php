@@ -36,11 +36,6 @@
                    <div class="hero__search">
                        <div class="hero__search__form">
                            <?php
-
-
-
-
-
                             ?>
                            <form action="product.php" method="GET">
                                <!-- <div class="hero__search__categories">
@@ -63,9 +58,57 @@
                            </div>
                        </div>
                    </div>
-                   <div class="hero__item set-bg" data-setbg="img/banner/Sneaker-Feature.jpg">
-
+                   <div id="wowslider-container1">
+                       <div class="ws_images">
+                           <ul>
+                               <li><img src="img/banner/sneaker1.jpg" alt="slide 01" title="slide 01" id="wows1_0" /></li>
+                               <li><img src="img/banner/sneaker2.jpg" alt="slide 02" title="slide 02" id="wows1_1" /></li>
+                               <li><img src="img/banner/sneaker3.jpg" alt="slide 03" title="slide 03" id="wows1_2" /></li>
+                               <li><img src="img/banner/sneaker4.jpg" alt="slide 04" title="slide 04" id="wows1_3" /></li>
+                           </ul>
+                       </div>
                    </div>
+                   <!-- <div class="carousel slide" id="slider" data-ride="carousel">
+                       <ol class="carousel-indicators">
+                           <li class="active" data-target="#slider" data-slide-to="0"></li>
+                           <li data-target="#slider" data-slide-to="1"></li>
+                           <li data-target="#slider" data-slide-to="2"></li>
+                           <li data-target="#slider" data-slide-to="3"></li>
+                       </ol>
+
+                       <div class="carousel-inner">
+                           <div class="item active" id="slide1">
+                               <div class="carousel-caption">
+                                   <h4>VẬN CHUYỂN TOÀN QUỐC</h4>
+                                   <p>Tất cả đơn hàng</p>
+                               </div>
+                           </div>
+
+                           <div class="item active" id="slide2">
+                               <div class="carousel-caption">
+                                   <h4>MIỄN PHÍ VỆ SINH</h4>
+                                   <p>Miễn phí vệ sinh trọng đời tất cả các sản phẩm</p>
+                               </div>
+                           </div>
+
+                           <div class="item active" id="slide3">
+                               <div class="carousel-caption">
+                                   <h4>CHÍNH SÁCH ĐỔI TRẢ</h4>
+                                   <p>Hỗ trợ đổi mẫu tròng vòng 1 tuần</p>
+                               </div>
+                           </div>
+
+                           <div class="item active" id="slide4">
+                               <div class="carousel-caption">
+                                   <h4>DỊCH VỤ HỖ TRỢ</h4>
+                                   <p>0123456789</p>
+                               </div>
+                           </div>
+                       </div>
+                       <a class="left carousel-control" href="#slider" data-slide="prev" role="button"><span class="icon-prev"></span></a>
+                       <a class="right carousel-control" href="#slider" data-slide="next" role="button"><span class="icon-next"></span></a>
+                   </div> -->
+
                </div>
            </div>
        </div>
@@ -157,12 +200,39 @@
 
            </div>
        </div>
+       <script type="text/javascript" src="js/wowslider.js"></script>
+
    </section>
 
 
-   <?php
+   <?php include 'inc/footer.php'; ?>
 
-    include 'inc/footer.php';
+   <!-- <style>
+       #slider {
+           margin-top: 40px;
+       }
 
+       #slider .item {
+           height: 300px;
+       }
 
-    ?>
+       #slide1 {
+           background: url('./img/banner/sneaker1.jpg') center no-repeat;
+       }
+
+       #slide2 {
+           background: url('img/banner/sneaker2.jpg') center no-repeat;
+       }
+
+       #slide3 {
+           background: url('img/banner/sneaker3.jpg') center no-repeat;
+       }
+
+       #slide4 {
+           background: url('img/banner/sneaker4.jpg') center no-repeat;
+       }
+
+       .carousel-caption {
+           font-size: 18px;
+       }
+   </style> -->
