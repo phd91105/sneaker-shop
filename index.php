@@ -63,11 +63,32 @@
                            </div>
                        </div>
                    </div>
-                   <div class="hero__item set-bg" data-setbg="img/banner/Sneaker-Feature.jpg">
-
+                   <!-- <div class="hero__item set-bg" data-setbg="img/banner/Sneaker-Feature.jpg"> -->
+                   <div id="wowslider-container1">
+                       <div class="ws_images">
+                           <ul>
+                               <li><img src="data1/images/629656431388523.jpg" alt="629656431388523" title="629656431388523" id="wows1_0" /></li>
+                               <li><img src="data1/images/219007695964179.jpg" alt="219007695964179" title="219007695964179" id="wows1_1" /></li>
+                               <li><a href="http://wowslider.net"><img src="data1/images/7801250539118200.jpg" alt="css image slider" title="7801250539118200" id="wows1_2" /></a></li>
+                               <li><img src="data1/images/sneakerfeature.jpg" alt="Sneaker-Feature" title="Sneaker-Feature" id="wows1_3" /></li>
+                           </ul>
+                       </div>
+                       <div class="ws_bullets">
+                           <div>
+                               <a href="#" title="629656431388523"><span><img src="data1/tooltips/629656431388523.jpg" alt="629656431388523" />1</span></a>
+                               <a href="#" title="219007695964179"><span><img src="data1/tooltips/219007695964179.jpg" alt="219007695964179" />2</span></a>
+                               <a href="#" title="7801250539118200"><span><img src="data1/tooltips/7801250539118200.jpg" alt="7801250539118200" />3</span></a>
+                               <a href="#" title="Sneaker-Feature"><span><img src="data1/tooltips/sneakerfeature.jpg" alt="Sneaker-Feature" />4</span></a>
+                           </div>
+                       </div>
+                       <div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">css image gallery</a> by WOWSlider.com v9.0</div>
+                       <div class="ws_shadow"></div>
                    </div>
+                   <script type="text/javascript" src="engine1/wowslider.js"></script>
+                   <script type="text/javascript" src="engine1/script.js"></script>
                </div>
            </div>
+       </div>
        </div>
    </section>
    <!-- Hero Section End -->
@@ -92,8 +113,6 @@
                 $get_ProductbyType = $pro->Get_ProductFeathered();
                 if ($get_ProductbyType) {
                     while ($result = $get_ProductbyType->fetch_assoc()) {
-
-
 
                 ?>
                        <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
@@ -126,7 +145,6 @@
                    <div class="section-title">
                        <h2>Sản phẩm mới</h2>
                    </div>
-
                </div>
            </div>
            <div class="row featured__filter">
