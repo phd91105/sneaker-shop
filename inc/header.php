@@ -62,12 +62,13 @@ if (isset($_GET['customer_user'])) {
         <div class="header__top">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6">
+                    <div class="col-lg-8 col-md-8">
                         <div class="header__top__left">
                             <ul>
                                 <!-- <li><i class="fa fa-envelope"></i> shop@123.com</li> -->
-                                <li><a class="text-dark" href="index.php">
-                                        <img src="./img/logo-snkrsg.png"></img></a></li>
+                                <li>
+                                        <img src="./img/logo-3475-removebg-preview.png" style="max-width: 50%;"></img>
+                                </li>
                                 <li class="active"><a class="text-dark" href="./index.php">Trang chủ</a></li>
                                 <li><a class="text-dark" href="./product.php">Sản phẩm</a></li>
                                 <li><a class="text-dark" href="./contact.php">Liên hệ</a></li>
@@ -83,7 +84,7 @@ if (isset($_GET['customer_user'])) {
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6">
+                    <div class="col-lg-4 col-md-4">
                         <div class="header__top__right">
                             <div class="header__top__right__social">
                                 <a href="cart.php"><i class="fa fa-shopping-cart"></i> Cart
