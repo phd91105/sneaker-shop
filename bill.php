@@ -133,7 +133,7 @@ if (isset($_GET["id"])) {
                                     <td><a href="billdetails.php?idbill=<?php echo $result['order_Id']  ?>">Xem thông tin chi tiết</a></td>
                                     <td>
                                         <?php if($result['status'] == 2) {
-                                            echo 'da thanh toan';
+                                            echo 'Đã thanh toán';
                                             } else { ?>
                                         <a href="https://api.phamduy.host/momo/checkout?amount=<?php echo $result['totalprice'] ?>&msg=<?php echo $result['order_Id']?>">MOMO</a>
                                         <a href="https://api.phamduy.host/vnpay/checkout?amount=<?php echo $result['totalprice'] ?>&orderInfo=<?php echo $result['order_Id']?>&orderType=1">VNPAY</a>
