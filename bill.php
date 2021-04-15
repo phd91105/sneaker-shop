@@ -73,7 +73,7 @@ if (isset($_GET["id"])) {
                 <div class="hero__search">
                     <div class="hero__search__form">
                         <form action="product.php" method="GET">
-                            <input type="text" name="namepro" placeholder="Tìm kiếm ...?">
+                            <input type="text" name="namepro" placeholder="Tìm kiếm ...">
                             <button type="" class="site-btn">SEARCH</button>
 
                         </form>
