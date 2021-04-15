@@ -111,7 +111,7 @@ h4{
             <td> <?php echo $result['size']; ?></td>
             <td> <?php echo $result['quantity']; ?></td>
            
-             <td>$<?php echo  $fm->format_currency($result['price']) ?></td>
+             <td><?php echo  $fm->format_currency($result['price']) ?> VNĐ</td>
            </tr>
 
         <?php

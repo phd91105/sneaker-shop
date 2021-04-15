@@ -2,7 +2,7 @@
 //fetch.php
 if(isset($_POST["category"]))
 {
- $connect = mysqli_connect("127.0.0.1", "pi", "Tdpamm00", "sneaker_db");
+ $connect = mysqli_connect("127.0.0.1", "root", "", "sneaker_db");
  $output = '';
  
   $query = "SELECT * FROM tbl_category WHERE catName = '".$_POST["catName"]."'";

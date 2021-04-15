@@ -58,31 +58,44 @@ if (isset($_GET['customer_user'])) {
 </head>
 
 <body>
-    <!-- Page Preloder -->
-    <!--    <div id="preloder">
-        <div class="loader"></div>
-    </div>
--->
-
-    <header class="header">
+    <header class="header mb-5">
         <div class="header__top">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="header__top__left">
                             <ul>
-                                <li><i class="fa fa-envelope"></i> contact@bugshop.com</li>
-                                <li>Miễn phí giao hàng cho hóa đơn từ 99$</li>
+                                <!-- <li><i class="fa fa-envelope"></i> shop@123.com</li> -->
+                                <li><a class="text-dark" href="index.php"><b>PHP Ecommerce</b> </a></li>
+                                <li class="active"><a class="text-dark" href="./index.php">Trang chủ</a></li>
+                                <li><a class="text-dark" href="./product.php">Sản phẩm</a></li>
+                                <li><a class="text-dark" href="./contact.php">Liên hệ</a></li>
+                                <?php
+                                $login = Session::get('customer_login');
+                                if ($login == false) {
+                                    echo '';
+                                } else {
+                                    echo  '<li><a class="text-dark" href="./bill.php">Đơn hàng</a></li>';
+                                }
+                                ?>
+                                </nav>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="header__top__right">
                             <div class="header__top__right__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                                <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                                <a href="cart.php"><i class="fa fa-shopping-cart"></i> Cart
+                                    <span>
+                                        <?php
+                                        $qtt = '0';
+                                        $qtt = Session::get("qtt");
+                                        if ($qtt)
+                                            echo "(" . $qtt . ")";
+                                        else echo "(0)";
+                                        ?>
+                                    </span>
+                                </a>
                             </div>
                             <?php
                             $check = Session::get('customer_login');
@@ -99,8 +112,10 @@ if (isset($_GET['customer_user'])) {
                                 if ($check == false) {
                                     echo '<a href="login.php"><i class="fa fa-user"></i> Đăng nhập</a>';
                                 } else {
-
-                                    echo '<a href="?customer_user=' . Session::get('customer_user') . '"><i class="fa fa-user"></i>Logout</a></div>';
+                                    echo '<ul class="list-inline">';
+                                    echo '<li><a href="profile.php"><i class="fa fa-user"></i>Profile</a></li>';
+                                    echo '<li><a href="?customer_user=' . Session::get('customer_user') . '"><i class="fa fa-sign-out"></i>Logout</a></li>';
+                                    echo '</ul></div>';
                                 }
                                 ?>
                             </div>
@@ -109,53 +124,5 @@ if (isset($_GET['customer_user'])) {
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="header__logo">
-                        <a href="./index.php"><img src="https://www.vectorlogo.zone/logos/php/php-ar21.svg" alt="logo" style="height:80px"></a>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <nav class="header__menu">
-                        <ul>
-                            <li class="active"><a href="./index.php">Trang chủ</a></li>
-                            <li><a href="./product.php">Sản phẩm</a></li>
-                            <li><a href="./contact.php">Liên hệ</a></li>
-                            <?php
-                            $login = Session::get('customer_login');
-                            if ($login == false) {
-                                echo '';
-                            } else {
-                                //  echo  '<li><a href="./profile.php">Thông tin </a></li>';
-                                echo  '<li><a href="./bill.php">Đơn hàng</a></li>';
-                            }
-                            ?>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-lg-3">
-                    <div class="header__cart">
-                        <ul>
-                            <!-- <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li> -->
-                            <li><a href="cart.php"><i class="fa fa-shopping-bag"></i> <span>
-                                        <?php
-                                        $qtt = '0';
-                                        $qtt = Session::get("qtt");
-                                        echo $qtt;
-                                        ?></span></a></li>
-                        </ul>
-                        <div class="header__cart__price">item: <span>
-                                <?php
-                                $a = '0';
-                                $a = Session::get('total');
-                                echo '$' . $fm->format_currency($a);
-                                ?></span></div>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="humberger__open">
-                <i class="fa fa-bars"></i>
-            </div> -->
-        </div>
+
     </header>

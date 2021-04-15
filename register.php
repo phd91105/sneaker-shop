@@ -16,37 +16,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])){
  <script src="https://code.jquery.com/jquery-3.5.1.js" type="text/javascript" charset="utf-8" async defer></script>
                     <script src="js/tiny-mce/jquery.tinymce.js" type="text/javascript"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<!-- <section class="hero hero-normal">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3">
-                
-            </div>
-            <div class="col-lg-9">
-            
-            </div>
-        </div>
-    </div>
-</section> -->
-<!-- Hero Section End -->
-<!-- Breadcrumb Section Begin -->
-<section class="breadcrumb-section set-bg" data-setbg="img/background.jpg">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <div class="breadcrumb__text">
-                    <h2>Đăng ký</h2>
-                    <div class="breadcrumb__option">
-                        <a href="./index.php">Trang chủ</a>
-                      
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Breadcrumb Section End -->
-<!-- Checkout Section Begin -->
+
 <section class="checkout spad">
     <div class="container">
         
@@ -59,20 +29,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])){
             <form action="register.php" method="post">
                 <div class="row">
                     <div class="modal-body">
-                        <!-- <div class="row">
-                            <div class="col-lg-6">
-                                <div class="checkout__input">
-                                    <p>Fist Name<span>*</span></p>
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="checkout__input">
-                                    <p>Last Name<span>*</span></p>
-                                    <input type="text">
-                                </div>
-                            </div>
-                        </div> -->
+                       
                         <div class="checkout__input">
                             <p>Tài khoản<span>*</span></p>
                             <input type="text" name="username" placeholder="Enter Username">

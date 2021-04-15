@@ -58,12 +58,12 @@
                                <i class="fa fa-phone"></i>
                            </div>
                            <div class="hero__search__phone__text">
-                               <h5>+84 11.188.888</h5>
+                               <h5>0123.456.789</h5>
                                <span>Hổ trợ 24/7 </span>
                            </div>
                        </div>
                    </div>
-                   <div class="hero__item set-bg" data-setbg="img/banner/banner.jpg">
+                   <div class="hero__item set-bg" data-setbg="img/banner/Sneaker-Feature.jpg">
 
                    </div>
                </div>
@@ -107,7 +107,7 @@
                                </div>
                                <div class="featured__item__text">
                                    <h6><a href="details.php?proname=<?php echo $result['productName'] ?>"><?php echo $result['productName'] ?></a></h6>
-                                   <h5>$<?php echo $result['price'] ?> </h5>
+                                   <h5><?php echo $fm->format_currency($result['price']) ?> VNĐ</h5>
                                </div>
                            </div>
                        </div>
@@ -140,14 +140,13 @@
                            <div class="featured__item">
                                <div class="featured__item__pic set-bg" data-setbg="admin/uploads/<?php echo $result['image'] ?>">
                                    <ul class="featured__item__pic__hover">
-                                       <!-- <li><a href="#"><i class="fa fa-heart"></i></a></li> -->
                                        <li><a href="details.php?proname=<?php echo $result['productName'] ?>"><i class="fa fa-retweet"></i></a></li>
                                        <li><a href="details.php?proname=<?php echo $result['productName'] ?>"><i class="fa fa-shopping-cart"></i></a></li>
                                    </ul>
                                </div>
                                <div class="featured__item__text">
                                    <h6><a href="details.php?proname=<?php echo $result['productName'] ?>"><?php echo $result['productName'] ?></a></h6>
-                                   <h5>$<?php echo $result['price'] ?> </h5>
+                                   <h5><?php echo $fm->format_currency($result['price']) ?> VNĐ</h5>
                                </div>
                            </div>
                        </div>

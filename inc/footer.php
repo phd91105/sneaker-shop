@@ -7,9 +7,9 @@
                           <!-- <a href="./index.php"><img src="img/footerlogo.jpg" alt=""></a> -->
                       </div>
                       <ul>
-                          <li> Address: 475A DIEN BIEN PHU, P25</li>
-                          <li> Phone: +84 11.188.888</li>
-                          <li> Email: contact@bugshop.com</li>
+                          <li> Address: Khu Công Nghệ Cao Q.9</li>
+                          <li> Phone: 0123.456.789</li>
+                          <li> Email: contact@phpshop.com</li>
                       </ul>
                   </div>
               </div>
@@ -49,10 +49,6 @@
                           <a href="#"><i class="fa fa-pinterest"></i></a>
                       </div>
 
-                  </div>
-                  <div class="footer__copyright">
-
-                      <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div>
                   </div>
               </div>
           </div>

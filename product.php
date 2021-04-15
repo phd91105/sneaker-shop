@@ -46,7 +46,7 @@
                             <i class="fa fa-phone"></i>
                         </div>
                         <div class="hero__search__phone__text">
-                            <h5>+84 11.188.888</h5>
+                            <h5>0123.456.789</h5>
                             <span>Hổ trợ 24/7 </span>
                         </div>
                     </div>
@@ -55,28 +55,7 @@
         </div>
     </div>
 </section>
-    <!-- Hero Section End -->
 
-    <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-section set-bg" data-setbg="img/background.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="breadcrumb__text">
-                        <h2>Demo PHP</h2>
-                        <div class="breadcrumb__option">
-                            <a href="./index.html">Trang chủ</a>
-                          
-                        <span>Tất cả sản phẩm</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Breadcrumb Section End -->
-
-    <!-- Product Section Begin -->
     <section class="product spad">
         <div class="container">
             <div class="row">
@@ -280,7 +259,7 @@
                                 </div>
                                 <div class="product__item__text">
                                     <h6><a href="details.php?proname=<?php echo $result['productName'] ?>"><?php echo $result['productName'] ?></a></h6>
-                                    <h5>$<?php echo  $fm->format_currency($result['price']) ?></h5>
+                                    <h5><?php echo  $fm->format_currency($result['price']) ?> VNĐ</h5>
                                 </div>
                             </div>
                         </div>
@@ -307,7 +286,7 @@
                                 </div>
                                 <div class="product__item__text">
                                     <h6><a href="details.php?proname=<?php echo $result['productName'] ?>"><?php echo $result['productName'] ?></a></h6>
-                                    <h5>$<?php echo   $fm->format_currency($result['price']) ?></h5>
+                                    <h5><?php echo $fm->format_currency($result['price']) ?> VNĐ</h5>
                                 </div>
                             </div>
                         </div>

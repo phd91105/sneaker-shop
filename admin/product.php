@@ -205,7 +205,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['registerbtn'])){
             <td> <?php echo $result['catName']; ?></td>
             <td> <?php echo $result['brandName']; ?></td>
            
-             <td>$<?php echo $fm->format_currency($result['price']) ?></td>
+             <td><?php echo $fm->format_currency($result['price']) ?> VNĐ</td>
              
            
 

@@ -3,8 +3,8 @@
 <?php
 Class Database{
    public $host   = "127.0.0.1";
-   public $user   = "pi";
-   public $pass   = "Tdpamm00";
+   public $user   = "root";
+   public $pass   = "";
    public $dbname = "sneaker_db";
  
  

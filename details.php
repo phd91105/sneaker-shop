@@ -64,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
                             <i class="fa fa-phone"></i>
                         </div>
                         <div class="hero__search__phone__text">
-                            <h5>+84 11.188.888</h5>
+                            <h5>0123.456.789</h5>
                             <span>Hổ trợ 24/7 </span>
                         </div>
                     </div>
@@ -73,28 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
         </div>
     </div>
 </section>
-<!-- Hero Section End -->
 
-<!-- Breadcrumb Section Begin -->
-<section class="breadcrumb-section set-bg" data-setbg="img/background.jpg">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <div class="breadcrumb__text">
-                    <h2>Product's Package</h2>
-                    <div class="breadcrumb__option">
-                        <a href="./index.html">Home</a>
-                        <a href="./index.html">Products</a>
-                        <span>Product's Package</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Breadcrumb Section End -->
-
-<!-- Product Details Section Begin -->
 <form action="" method="post">
     <?php
 
@@ -139,7 +118,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
                                     <i class="fa fa-star-half-o"></i>
                                     <span>(18 reviews)</span>
                                 </div>
-                                <div class="product__details__price">$<?php echo  $fm->format_currency($result_1pro['price']) ?></div>
+                                <div class="product__details__price"><?php echo  $fm->format_currency($result_1pro['price']) ?> VNĐ</div>
                                 <p><?php echo $result_1pro['description'] ?></p>
 
                                 <select id="size" name="size" class="">
@@ -186,8 +165,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
                             </div>
                         </div>
 
-
-
                         <div class="col-lg-12 justify-content-center">
                             <div class="product__details__tab">
                                 <ul class="nav nav-tabs" role="tablist">
@@ -198,7 +175,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
                                         <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab" aria-selected="false">Thông tin chi tiết</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab" aria-selected="false">Reviews <span>(1)</span></a>
+                                        <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab" aria-selected="false">Reviews</a>
                                     </li>
                                 </ul>
                                 <div class="tab-content">
@@ -215,14 +192,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
                                         </div>
                                     </div>
                                     <div class="tab-pane" id="tabs-3" role="tabpanel">
-                                        <div class="product__details__tab__desc">
-                                            <h6>Thông tin sản phẩm</h6>
-                                            <p><?php echo $result_1pro['description'] ?></p>
+                                        <div class="product__details__tab__desc row justify-content-center">
+                                            <div class="col-6">
+                                                <div class="fb-comments" data-href="https://demo.phamduy.me/details.php?proname=<?php echo $_GET['proname'] ?>" data-numposts="5"></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="fb-comments" data-href="https://demo.phamduy.me/details.php?proname=<?php echo $_GET['proname'] ?>" data-width="" data-numposts="5"></div>
                         </div>
                     </div>
                 </div>

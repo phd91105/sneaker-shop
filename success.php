@@ -4,20 +4,8 @@ include 'inc/header.php';
 <?php
 $buyer = Session::get('customer_user');
 ?>
-<section class="breadcrumb-section set-bg" data-setbg="img/background.jpg">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <div class="breadcrumb__text">
-                    <h2>Thanh toán thành công</h2>
-                    <div class="breadcrumb__option">
-                        <a href="./index.html">Trang chủ</a>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<section class="jumbotron text-center">
+    <h3 class="jumbotron-heading">Thanh toán thành công</h3>
 </section>
 <section class="product-details spad">
     <?php
@@ -53,9 +41,8 @@ $buyer = Session::get('customer_user');
             <h5>( Vui lòng giữ lại mã hóa đơn này.) <br>
                 Vui lòng <a href="bill.php">click here</a> để xem thông tin chi tiết đơn hàng
             </h5>
-            <h5 class="htest">Chân thành cảm ơn,</h5>
             <br>
-            <h5>Your Friends at Demo PHP</h5>
+            <h5 class="htest">Chân thành cảm ơn</h5>
         </center>
 
 

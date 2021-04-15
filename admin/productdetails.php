@@ -242,7 +242,7 @@ h3{
              <h5 id="redd">Danh mục: <?php echo $result_prod['catName'] ?></h5>
              
               
-            <h3>Giá: $<?php echo $result_prod['price'] ?></h3>
+            <h3>Giá: <?php echo $result_prod['price'] ?> VNĐ</h3>
               
           </div>
         </div>
