@@ -1,6 +1,20 @@
 <?php
 include 'inc/header.php';
 ?>
+<?php
+$bill = new bill();
+$fm = new format();
+
+?>
+<?php
+
+if (isset($_GET["id"])) {
+    $id = $_GET["id"];
+    $updatestt = $bill->update_Status(2, $id);
+    header('Location: bill.php');
+}
+?>
+
 <style>
     #customers {
         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -116,12 +130,14 @@ include 'inc/header.php';
                                     else
                                         echo '<td class="text-danger">Canncel</td>';
                                     ?>
-
-
                                     <td><a href="billdetails.php?idbill=<?php echo $result['order_Id']  ?>">Xem thông tin chi tiết</a></td>
                                     <td>
-                                        <a href="https://api.phamduy.host/momo/checkout?amount=<?php echo $result['totalprice']?>">MOMO</a>
-                                        <a href="vnpay.php">VNPAY</a>
+                                        <?php if($result['status'] == 2) {
+                                            echo 'da thanh toan';
+                                            } else { ?>
+                                        <a href="https://api.phamduy.host/momo/checkout?amount=<?php echo $result['totalprice'] ?>&msg=<?php echo $result['order_Id']?>">MOMO</a>
+                                        <a href="https://api.phamduy.host/vnpay/checkout?amount=<?php echo $result['totalprice'] ?>&orderInfo=<?php echo $result['order_Id']?>&orderType=1">VNPAY</a>
+                                    <?php } ?>
                                     </td>
                                 </tr>
                         <?php

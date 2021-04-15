@@ -193,7 +193,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
                                     </div>
                                     <div class="tab-pane" id="tabs-3" role="tabpanel">
                                         <div class="product__details__tab__desc row justify-content-center">
-                                            <div class="col-6">
+                                            <div class="col-lg-6 col-sm-8">
                                                 <div class="fb-comments" data-href="https://demo.phamduy.me/details.php?proname=<?php echo $_GET['proname'] ?>" data-numposts="5"></div>
                                             </div>
                                         </div>
