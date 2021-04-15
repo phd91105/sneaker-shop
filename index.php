@@ -63,14 +63,14 @@
                            </div>
                        </div>
                    </div>
-                   <!-- <div class="hero__item set-bg" data-setbg="img/banner/Sneaker-Feature.jpg"> -->
+                   <!-- Start WOWSlider.com BODY section -->
                    <div id="wowslider-container1">
                        <div class="ws_images">
                            <ul>
                                <li><img src="data1/images/629656431388523.jpg" alt="629656431388523" title="629656431388523" id="wows1_0" /></li>
                                <li><img src="data1/images/219007695964179.jpg" alt="219007695964179" title="219007695964179" id="wows1_1" /></li>
-                               <li><a href="http://wowslider.net"><img src="data1/images/7801250539118200.jpg" alt="css image slider" title="7801250539118200" id="wows1_2" /></a></li>
-                               <li><img src="data1/images/sneakerfeature.jpg" alt="Sneaker-Feature" title="Sneaker-Feature" id="wows1_3" /></li>
+                               <li><img src="data1/images/7801250539118200.jpg" alt="jquery image slider" title="7801250539118200" id="wows1_2" /></a></li>
+                               <li><img src="data1/images/sneakerfeature.jpg" alt="sneakerfeature" title="sneakerfeature" id="wows1_3" /></li>
                            </ul>
                        </div>
                        <div class="ws_bullets">
@@ -78,109 +78,100 @@
                                <a href="#" title="629656431388523"><span><img src="data1/tooltips/629656431388523.jpg" alt="629656431388523" />1</span></a>
                                <a href="#" title="219007695964179"><span><img src="data1/tooltips/219007695964179.jpg" alt="219007695964179" />2</span></a>
                                <a href="#" title="7801250539118200"><span><img src="data1/tooltips/7801250539118200.jpg" alt="7801250539118200" />3</span></a>
-                               <a href="#" title="Sneaker-Feature"><span><img src="data1/tooltips/sneakerfeature.jpg" alt="Sneaker-Feature" />4</span></a>
+                               <a href="#" title="sneakerfeature"><span><img src="data1/tooltips/sneakerfeature.jpg" alt="sneakerfeature" />4</span></a>
                            </div>
                        </div>
-                       <div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">css image gallery</a> by WOWSlider.com v9.0</div>
+                       <div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">css slideshow</a> by WOWSlider.com v9.0</div>
                        <div class="ws_shadow"></div>
                    </div>
                    <script type="text/javascript" src="engine1/wowslider.js"></script>
                    <script type="text/javascript" src="engine1/script.js"></script>
-               </div>
-           </div>
-       </div>
-       </div>
-   </section>
-   <!-- Hero Section End -->
+                   <!-- End WOWSlider.com BODY section -->
 
-   <!-- Categories Section Begin -->
+                   <!-- Featured Section Begin -->
+                   <section class="featured spad">
+                       <div class="container">
+                           <div class="row">
+                               <div class="col-lg-12">
+                                   <div class="section-title">
+                                       <h2>Sản phẩm nổi bật</h2>
+                                   </div>
 
-   <!-- Categories Section End -->
-
-   <!-- Featured Section Begin -->
-   <section class="featured spad">
-       <div class="container">
-           <div class="row">
-               <div class="col-lg-12">
-                   <div class="section-title">
-                       <h2>Sản phẩm nổi bật</h2>
-                   </div>
-
-               </div>
-           </div>
-           <div class="row featured__filter">
-               <?php
-                $get_ProductbyType = $pro->Get_ProductFeathered();
-                if ($get_ProductbyType) {
-                    while ($result = $get_ProductbyType->fetch_assoc()) {
-
-                ?>
-                       <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
-                           <div class="featured__item">
-                               <div class="featured__item__pic set-bg" data-setbg="admin/uploads/<?php echo $result['image'] ?>">
-                                   <ul class="featured__item__pic__hover">
-                                       <!-- <li><a href="#"><i class="fa fa-heart"></i></a></li> -->
-                                       <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                       <li><a href="details.php?proname=<?php echo $result['productName'] ?>"><i class="fa fa-shopping-cart"></i></a></li>
-                                   </ul>
-                               </div>
-                               <div class="featured__item__text">
-                                   <h6><a href="details.php?proname=<?php echo $result['productName'] ?>"><?php echo $result['productName'] ?></a></h6>
-                                   <h5><?php echo $fm->format_currency($result['price']) ?> VNĐ</h5>
                                </div>
                            </div>
-                       </div>
-               <?php
-                    }
-                }
-                ?>
+                           <div class="row featured__filter">
+                               <?php
+                                $get_ProductbyType = $pro->Get_ProductFeathered();
+                                if ($get_ProductbyType) {
+                                    while ($result = $get_ProductbyType->fetch_assoc()) {
 
-           </div>
-       </div>
-   </section>
-   <section class="featured spad">
-       <div class="container">
-           <div class="row">
-               <div class="col-lg-12">
-                   <div class="section-title">
-                       <h2>Sản phẩm mới</h2>
-                   </div>
-               </div>
-           </div>
-           <div class="row featured__filter">
-               <?php
-                $get_ProductbyType = $pro->get_ProductNew();
-                if ($get_ProductbyType) {
-                    while ($result = $get_ProductbyType->fetch_assoc()) {
+                                ?>
+                                       <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+                                           <div class="featured__item">
+                                               <div class="featured__item__pic set-bg" data-setbg="admin/uploads/<?php echo $result['image'] ?>">
+                                                   <ul class="featured__item__pic__hover">
+                                                       <!-- <li><a href="#"><i class="fa fa-heart"></i></a></li> -->
+                                                       <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                                       <li><a href="details.php?proname=<?php echo $result['productName'] ?>"><i class="fa fa-shopping-cart"></i></a></li>
+                                                   </ul>
+                                               </div>
+                                               <div class="featured__item__text">
+                                                   <h6><a href="details.php?proname=<?php echo $result['productName'] ?>"><?php echo $result['productName'] ?></a></h6>
+                                                   <h5><?php echo $fm->format_currency($result['price']) ?> VNĐ</h5>
+                                               </div>
+                                           </div>
+                                       </div>
+                               <?php
+                                    }
+                                }
+                                ?>
 
-                ?>
-                       <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
-                           <div class="featured__item">
-                               <div class="featured__item__pic set-bg" data-setbg="admin/uploads/<?php echo $result['image'] ?>">
-                                   <ul class="featured__item__pic__hover">
-                                       <li><a href="details.php?proname=<?php echo $result['productName'] ?>"><i class="fa fa-retweet"></i></a></li>
-                                       <li><a href="details.php?proname=<?php echo $result['productName'] ?>"><i class="fa fa-shopping-cart"></i></a></li>
-                                   </ul>
-                               </div>
-                               <div class="featured__item__text">
-                                   <h6><a href="details.php?proname=<?php echo $result['productName'] ?>"><?php echo $result['productName'] ?></a></h6>
-                                   <h5><?php echo $fm->format_currency($result['price']) ?> VNĐ</h5>
-                               </div>
                            </div>
                        </div>
-               <?php
-                    }
-                }
-                ?>
+                   </section>
+                   <section class="featured spad">
+                       <div class="container">
+                           <div class="row">
+                               <div class="col-lg-12">
+                                   <div class="section-title">
+                                       <h2>Sản phẩm mới</h2>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="row featured__filter">
+                               <?php
+                                $get_ProductbyType = $pro->get_ProductNew();
+                                if ($get_ProductbyType) {
+                                    while ($result = $get_ProductbyType->fetch_assoc()) {
 
-           </div>
-       </div>
-   </section>
+                                ?>
+                                       <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+                                           <div class="featured__item">
+                                               <div class="featured__item__pic set-bg" data-setbg="admin/uploads/<?php echo $result['image'] ?>">
+                                                   <ul class="featured__item__pic__hover">
+                                                       <li><a href="details.php?proname=<?php echo $result['productName'] ?>"><i class="fa fa-retweet"></i></a></li>
+                                                       <li><a href="details.php?proname=<?php echo $result['productName'] ?>"><i class="fa fa-shopping-cart"></i></a></li>
+                                                   </ul>
+                                               </div>
+                                               <div class="featured__item__text">
+                                                   <h6><a href="details.php?proname=<?php echo $result['productName'] ?>"><?php echo $result['productName'] ?></a></h6>
+                                                   <h5><?php echo $fm->format_currency($result['price']) ?> VNĐ</h5>
+                                               </div>
+                                           </div>
+                                       </div>
+                               <?php
+                                    }
+                                }
+                                ?>
+
+                           </div>
+                       </div>
+                   </section>
 
 
-   <?php
+                   <?php
 
-    include 'inc/footer.php';
+                    include 'inc/footer.php';
 
 
-    ?>
+                    ?>
