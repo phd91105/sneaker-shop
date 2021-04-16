@@ -43,7 +43,7 @@
                                     <span class="arrow_carrot-down"></span>
                                 </div> -->
 
-                               <input type="text" name="namepro" placeholder="What do yo u need?">
+                               <input type="text" name="namepro" placeholder="Tìm kiếm ...">
                                <button type="" class="site-btn">SEARCH</button>
 
                            </form>
@@ -58,67 +58,31 @@
                            </div>
                        </div>
                    </div>
+                   <!-- Start WOWSlider.com BODY section -->
                    <div id="wowslider-container1">
                        <div class="ws_images">
                            <ul>
-                               <li><img src="img/banner/sneaker1.jpg" alt="slide 01" title="slide 01" id="wows1_0" /></li>
-                               <li><img src="img/banner/sneaker2.jpg" alt="slide 02" title="slide 02" id="wows1_1" /></li>
-                               <li><img src="img/banner/sneaker3.jpg" alt="slide 03" title="slide 03" id="wows1_2" /></li>
-                               <li><img src="img/banner/sneaker4.jpg" alt="slide 04" title="slide 04" id="wows1_3" /></li>
+                               <li><img src="data1/images/629656431388523.jpg" alt="629656431388523" title="629656431388523" id="wows1_0" /></li>
+                               <li><img src="data1/images/219007695964179.jpg" alt="219007695964179" title="219007695964179" id="wows1_1" /></li>
+                               <li><img src="data1/images/7801250539118200.jpg" alt="jquery image slider" title="7801250539118200" id="wows1_2" /></a></li>
+                               <li><img src="data1/images/sneakerfeature.jpg" alt="sneakerfeature" title="sneakerfeature" id="wows1_3" /></li>
                            </ul>
                        </div>
-                   </div>
-                   <!-- <div class="carousel slide" id="slider" data-ride="carousel">
-                       <ol class="carousel-indicators">
-                           <li class="active" data-target="#slider" data-slide-to="0"></li>
-                           <li data-target="#slider" data-slide-to="1"></li>
-                           <li data-target="#slider" data-slide-to="2"></li>
-                           <li data-target="#slider" data-slide-to="3"></li>
-                       </ol>
-
-                       <div class="carousel-inner">
-                           <div class="item active" id="slide1">
-                               <div class="carousel-caption">
-                                   <h4>VẬN CHUYỂN TOÀN QUỐC</h4>
-                                   <p>Tất cả đơn hàng</p>
-                               </div>
-                           </div>
-
-                           <div class="item active" id="slide2">
-                               <div class="carousel-caption">
-                                   <h4>MIỄN PHÍ VỆ SINH</h4>
-                                   <p>Miễn phí vệ sinh trọng đời tất cả các sản phẩm</p>
-                               </div>
-                           </div>
-
-                           <div class="item active" id="slide3">
-                               <div class="carousel-caption">
-                                   <h4>CHÍNH SÁCH ĐỔI TRẢ</h4>
-                                   <p>Hỗ trợ đổi mẫu tròng vòng 1 tuần</p>
-                               </div>
-                           </div>
-
-                           <div class="item active" id="slide4">
-                               <div class="carousel-caption">
-                                   <h4>DỊCH VỤ HỖ TRỢ</h4>
-                                   <p>0123456789</p>
-                               </div>
+                       <div class="ws_bullets">
+                           <div>
+                               <a href="#" title="629656431388523"><span><img src="data1/tooltips/629656431388523.jpg" alt="629656431388523" />1</span></a>
+                               <a href="#" title="219007695964179"><span><img src="data1/tooltips/219007695964179.jpg" alt="219007695964179" />2</span></a>
+                               <a href="#" title="7801250539118200"><span><img src="data1/tooltips/7801250539118200.jpg" alt="7801250539118200" />3</span></a>
+                               <a href="#" title="sneakerfeature"><span><img src="data1/tooltips/sneakerfeature.jpg" alt="sneakerfeature" />4</span></a>
                            </div>
                        </div>
-                       <a class="left carousel-control" href="#slider" data-slide="prev" role="button"><span class="icon-prev"></span></a>
-                       <a class="right carousel-control" href="#slider" data-slide="next" role="button"><span class="icon-next"></span></a>
-                   </div> -->
-
-               </div>
-           </div>
-       </div>
+                       <div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">css slideshow</a> by WOWSlider.com v9.0</div>
+                       <div class="ws_shadow"></div>
+                   </div>
+                   <script type="text/javascript" src="engine1/wowslider.js"></script>
+                   <script type="text/javascript" src="engine1/script.js"></script>
+                   <!-- End WOWSlider.com BODY section -->
    </section>
-   <!-- Hero Section End -->
-
-   <!-- Categories Section Begin -->
-
-   <!-- Categories Section End -->
-
    <!-- Featured Section Begin -->
    <section class="featured spad">
        <div class="container">
@@ -135,8 +99,6 @@
                 $get_ProductbyType = $pro->Get_ProductFeathered();
                 if ($get_ProductbyType) {
                     while ($result = $get_ProductbyType->fetch_assoc()) {
-
-
 
                 ?>
                        <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
@@ -169,7 +131,6 @@
                    <div class="section-title">
                        <h2>Sản phẩm mới</h2>
                    </div>
-
                </div>
            </div>
            <div class="row featured__filter">

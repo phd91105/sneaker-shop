@@ -36,7 +36,7 @@ if (isset($_GET['customer_user'])) {
     <meta name="keywords" content="Ogani, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Saigon Sneaker Store  - Authentic - Sneaker</title>
+    <title>Saigon Sneaker Store - Authentic - Sneaker</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@200;300;400;600;900&display=swap" rel="stylesheet">
@@ -55,9 +55,12 @@ if (isset($_GET['customer_user'])) {
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/wowstyle.css" type="text/css">
+    <!-- Start WOWSlider.com HEAD section -->
+    <!-- add to the <head> of your page -->
+    <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+    <script type="text/javascript" src="engine1/jquery.js"></script>
+    <!-- End WOWSlider.com HEAD section -->
 </head>
-
 <body>
     <header class="header mb-5">
         <div class="header__top">
@@ -68,7 +71,7 @@ if (isset($_GET['customer_user'])) {
                             <ul>
                                 <!-- <li><i class="fa fa-envelope"></i> shop@123.com</li> -->
                                 <li>
-                                        <img src="./img/logo-3475-removebg-preview.png" style="max-width: 50%;"></img>
+                                    <img src="data1/images/logo-3475-removebg-preview.png" style="max-width: 50%;"></img>
                                 </li>
                                 <li class="active"><a class="text-dark" href="./index.php">Trang chủ</a></li>
                                 <li><a class="text-dark" href="./product.php">Sản phẩm</a></li>

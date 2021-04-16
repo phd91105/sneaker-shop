@@ -4,9 +4,6 @@ include 'inc/header.php';
 <?php
 $buyer = Session::get('customer_user');
 ?>
-<section class="jumbotron text-center">
-    <h3 class="jumbotron-heading">Thanh toán thành công</h3>
-</section>
 <section class="product-details spad">
     <?php
     $show = $bill->get_Bill_Max();
