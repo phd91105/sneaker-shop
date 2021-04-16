@@ -61,7 +61,6 @@ if (isset($_GET['customer_user'])) {
     <script type="text/javascript" src="engine1/jquery.js"></script>
     <!-- End WOWSlider.com HEAD section -->
 </head>
-
 <body>
     <header class="header mb-5">
         <div class="header__top">

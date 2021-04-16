@@ -36,11 +36,6 @@
                    <div class="hero__search">
                        <div class="hero__search__form">
                            <?php
-
-
-
-
-
                             ?>
                            <form action="product.php" method="GET">
                                <!-- <div class="hero__search__categories">
@@ -166,12 +161,39 @@
 
            </div>
        </div>
+       <script type="text/javascript" src="js/wowslider.js"></script>
+
    </section>
 
 
-   <?php
+   <?php include 'inc/footer.php'; ?>
 
-    include 'inc/footer.php';
+   <!-- <style>
+       #slider {
+           margin-top: 40px;
+       }
 
+       #slider .item {
+           height: 300px;
+       }
 
-    ?>
+       #slide1 {
+           background: url('./img/banner/sneaker1.jpg') center no-repeat;
+       }
+
+       #slide2 {
+           background: url('img/banner/sneaker2.jpg') center no-repeat;
+       }
+
+       #slide3 {
+           background: url('img/banner/sneaker3.jpg') center no-repeat;
+       }
+
+       #slide4 {
+           background: url('img/banner/sneaker4.jpg') center no-repeat;
+       }
+
+       .carousel-caption {
+           font-size: 18px;
+       }
+   </style> -->
