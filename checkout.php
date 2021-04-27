@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit_buy'])) {
         }
     }
     $destroyCart = $ct->Del_cart_by_Session();
-    // $updateQuantity = $prod->updateQuantityCheckout($_POST);
+    $updateQuantity = $prod->updateQuantityCheckout($_POST);
     header('Location:success.php');
 }
 // else{
