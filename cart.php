@@ -201,13 +201,13 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="shoping__continue">
-                        <!-- <div class="shoping__discount">
+                        <div class="shoping__discount">
                             <h5>Discount Codes</h5>
                             <form action="" method="post">
                                 <input type="text" name="codediscount" placeholder="Enter your coupon code">
                                 <button type="submit" name="discount" class="site-btn">APPLY COUPON</button>
                             </form>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
